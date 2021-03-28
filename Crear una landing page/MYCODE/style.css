@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+} 
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+img{
+    display: block;
+    height: 450px;
+    object-fit: cover;/*para que no pierdan la proporcion*/
+    animation: moverArriba 1s ease-in;
+}
+
+.textos{
+    width: 50%;
+    color: #fff;
+}
+
+.textos h1{
+    font-size: 80px;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos h2{
+    font-size: 30px;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos a{
+    display: inline-block; /*para dejar hacer padding y propiedades de bloque*/
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid white;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: moverArriba 1s ease-in;
+}
+
+.wave{
+    height: 150px;
+    width: 100%;
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.icono{
+    animation: moverIzquierda 1s ease-in;
+    z-index: 2;
+}
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0.9;
+    transition: all 1s ease;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.uno{
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0% 0%);
+}
+
+.dos{
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(100% at 0% 0%);
+}
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);  /*si quisiera de derecha a izquierda debo de poenr 100px*/
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);  /*si quisiera de derecha a izquierda debo de poenr 100px*/
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);  /*si quisiera de derecha a izquierda debo de poenr 100px*/
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverAbajo{
+    0%{
+        opacity: 0;
+        transform: translateY(1-00px);  /*si quisiera de derecha a izquierda debo de poenr 100px*/
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width:1000px){
+    img{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:800px){
+    img{
+        height: 370px;
+    }
+
+    .textos h1{
+        font-size: 70px;
+    }
+
+    .textos h2{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    img{
+        height: 250px;
+    }
+
+    .textos h1{
+        font-size: 40px;
+    }
+
+    .textos h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:450px){
+    
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        height: 370px;
+    }
+
+    .textos h1{
+        font-size: 60px;
+    }
+
+    .textos h2{
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width:340px){
+    
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        height: 160px;
+    }
+
+    .textos h1{
+        font-size: 35px;
+    }
+    .textos a{
+        width: 120px;
+    }
+    .textos h2{
+        font-size: 15px;
+    }
+}
