@@ -1,0 +1,57 @@
+*********************************************
+**********************************************
+**********************************************
+
+*********************************************
+SET SQL_SAFE_UPDATES = 0; 
+//ESTO ES PARA CAMBAIR LA CONFIGURACIO PARA PODER 
+USAR OTROS CAMBIOS EN LA CONDICUION DEL UPDATE Y 
+ALTERAR MÁS DE UNA FILA
+*******************************************
+
+**************************************************
+**************************************************
+**************************************************
+
+
+
+
+
+
+
+
+
+Agregar o quitar una primary key en MYSQL
+alter table NOMBRETABLA add primary key NOMBRECOLUMNA;
+	La columna ya debe existir
+
+alter table NOMBRETABLA drop primary key;
+
+*******************************************************
+Agregar o quitar una foreign key
+
+ALTER TABLE nombretablahija ADD CONSTRAINT
+nombrerestriccion FOREIGN KEY nombre columna
+REFERENCES nombretablamadre(columanprimarykey); //la tabla debe tener una primary key
+
+ALTER TABLE nombretablahija DROP FOREIGN KEY nombrerestriccion;
+
+*******************************************************
+Agregar Unique constraint
+alter table nombretabla add constraint
+nombreconstraint UNIQUE nombrecolumna;
+
+alter table nombretabla drop index nombrecolumna; //para quitarlo
+**********************************************************
+CAMBIAR NOMBRE COLUMNA
+alter table NOMBRETABLA change NOMBRECOLUMNAVIEJO
+NOMBRECOLUMNANUEVO TIPODEDATO;
+
+************************************************************
+CAMBIAR DATA TYPE DE UNA COLUMNA
+ALTER TABLE nombretabla MODIFY nombrecoluman
+tipodatonuevo;
+**********************************************************************
+ACTUALIZAR DATOS DE UNA TABLA 
+
+UPDATE nombretabla SET nombrecoluman = "valornuevo" [WHERE (condiciones)] el where es opcional

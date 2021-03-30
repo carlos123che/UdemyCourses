@@ -1,0 +1,22 @@
+Parte 1
+	Crear tres tablas definidas con la siguiente estructura
+
+Mascotas
+	Campos: ID, NOMBRE, ID_DUEÑO, SERVICIO
+
+Personas
+	Campos: ID, NOMBRE, APELLIDO, COD_ZIP, TLF
+
+Direcciones
+	Campos: ZIP, NOMBRE_ZONA, RUTA
+
+*******************************************************************
+Parte 2 
+
+*Agrega una primary key al campo id en las tablas mascotas y personas
+*Agrega una foreign key al campo id_dueño en la tabla mascotas que referencia al campo id en la tabla personas
+*Agrega una foreign key al campo zip_cod en la tabla Personas que referencia al campo zip en la tabal direcciones
+*Agrega una columna llamada email a la tabla personas.
+*Agrega una unique constraint a la columna email de la tabla personas.
+*Cambia el nombre a la columan nombre en la tabla mascotas por primer_nombre.
+*Cambia el tipo de dato a la columna ruta en la tabla direcciones por char(12).
