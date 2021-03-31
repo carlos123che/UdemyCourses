@@ -1,0 +1,5 @@
+git checkout "nombrearchivoconextension" borra los cambios si es que habian
+git diff "nombrearchivoconestension" compara el archivo nuevo de la ultima version con la version guardada en un commit
+
+ .gitignore es un documento en el cual se pueden escribir los ficheros o carpetas que querremos que git ignore para comparar o guardar cambios y versiones, si son varios se hace linea por linea
+
