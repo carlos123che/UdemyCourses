@@ -1,0 +1,52 @@
+@media only screen and (max-width: 600px){  /*para que cuando sea menos de 600 pixeles se quede igual y si no cambie*/
+
+    .navbar{
+        position: relative; /*para poder hacerle animaciones*/
+    }    
+
+    .navbar .shopping{
+        display: none; /*desaparecerlo si es para telefono*/
+    }
+
+    .navbar .menu-bar{
+        display: block; /*para visualizarlo*/
+        grid-column: 8/9;
+        font-size: 2em;
+        cursor:  pointer;
+    }
+
+    .navbar .menu{
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: #EDCB54;
+        margin-top: 38em;
+        transform: translateX(170%);
+        transition: all 1s;
+    }
+
+    .navbar .menu-toggle{
+        transform: translateX(70%);
+    }
+
+    /* * * * * * MAIN * * * * * * */
+    .hero .info-content{
+        grid-column: 2/10;
+        grid-row: 4/8;
+    }
+
+    .hero h1{
+        font-size: 3.5em;
+    }
+
+    /* footer */
+    .footer .follow-me{
+        display: none;
+    }
+
+    .footer .social-network{
+        text-align: center;
+    }
+}

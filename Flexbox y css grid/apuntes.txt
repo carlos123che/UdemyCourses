@@ -1,0 +1,15 @@
+*****************TIPS**********************
+Poner padding a los elementos para dejar el 
+espacio entre ellos para que los diseño respiren
+
+Que los textos respiren y puedan leerse. Usar
+line-height: "tamaño"
+
+Tener cuidado con la jerarquia del texto.
+Tambien se puede usar la fuente para jerarquia
+
+Tomar en cuenta el contraste de colores.
+	Ejemplo
+background-image: linear-gradient(rgba(16,16,16,.5), rgba(16,16,16,0.05)), url(direccionimagen);
+
+Tomar en cuenta la alineación. todo alineado.

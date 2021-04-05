@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800;900&family=Roboto:ital,wght@0,100;0,300;0,500;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: #EDCB54;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);/*  dividir en 8 columas */
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    grid-column: 2/3; /*para mover de una a la otra */
+}
+
+.navbar .menu{
+    grid-column: 4/7; /*para moverlo en esas cuatro celdas*/
+    display: flex; /*para que se pongan una al lado de la otra*/
+    justify-content: space-around; /*para que se acomoden*/
+}
+
+.navbar .menu li{
+    list-style: none; /*quitar viñetas*/
+}
+
+.navbar .menu a{
+    text-decoration: none; /*quitar decoracion enlaces*/
+    color: #181818;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    color: whitesmoke;
+}
+
+.navbar .menu-bar{
+    display: none; /*para desaparecerlo ya que solo lo queremos para moviles*/
+}
+
+.navbar .shopping{
+    grid-column: 8/9; /*se pone una columna más de la que esta y se pone a cual se quiere corre*/
+}
+
+/* * * * *  main * * * */
+.hero{
+    height: 83vh;
+    background-image: linear-gradient(rgba(16,16,16, .8), rgba(16,16,16, .9)), url(../img/ChriStern45.jpg);
+    background-size: cover; /*para que la imagen ocupe todo el espacio*/
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10 ,1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.hero .info-content{
+    grid-column: 7/10;
+    grid-row: 3/7;
+    color: white;
+}
+
+.hero h3{
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.hero h1{
+    font-size: 5em;
+    color: #EDCB54;
+}
+
+.hero p{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+}
+
+.hero .btn{
+    font-size: 1em;
+    background: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: 1px solid #EDCB54;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+.hero .btn:hover{
+    background: #EDCB54;
+    color: black;
+    font-weight: 600;
+}
+
+/* footer */
+.footer{
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: #181818;
+    color: whitesmoke;
+    grid-template-areas: "listen-online follow-me social-network";
+}
+
+.footer .listen-online{
+    grid-template-areas: listen-online;
+    display: flex;
+    justify-content: center;
+    background-color: #EDCB54;
+    padding: 26px;
+    color: #181818;
+}
+
+.footer .listen-online i{
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer .follow-me{
+    grid-template-areas: follow-me;
+    text-align: center;
+}
+
+.footer .social-network{
+    grid-template-areas: social-network;
+    font-size: 1.3em;
+}
+
+.footer .social-network i{
+    margin-right: 15px;
+    color: #EDCB54;
+}
+
+.footer .social-network i:hover{
+    color: whitesmoke;
+}
