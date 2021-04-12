@@ -1,0 +1,12 @@
+alt mas flechita arriba o abajo para mover la linea de un lugar al otro
+	Se pueden seleccionar varias lineas y se van a dezplazar todas
+
+
+shift mas tab para quitar tabulaciones
+
+ctrl + shit + L para poner multicursos con palabras que coincide y 
+	ctrl + shift + k para borrar toda una linea donde esta el cursos
+
+Ctrl + shift + z para reahacer lo deshecho con ctrl + z
+
+Ctrl + K luego soltar y luego presiona Z con esto entra en modo Zen para no tener distracciones

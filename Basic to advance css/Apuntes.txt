@@ -1,0 +1,151 @@
+TRABAJANDO CON TEXTOS
+text-align: center,right, left, justify;
+	para alinear el texto
+
+text-decoration: para poner una linea en el texto hay varias opciones
+
+text-transform: para modificar si se pone en mayusculas y asi el texto
+
+letter-spacing: para agregar espacio entre letras
+
+word-spacing: para agregar espacio entre palabras
+
+line-height: para agregar espacio entre lineas
+
+color: le da color
+
+font-style: para cambiar la fuente.
+
+font-weight: para cambiarle el grosor
+************************************************************************************************
+ADDING BORDERS
+border-style: ver opciones, para darle estilo al borde. se puede separar en bottom, top, right, left
+
+border-width: para darle tamaño
+
+border-color: para darle color al borde 
+
+SE PUEDE PONER TODO EN LA MISMA LINEA. TAMBIEN TODO SE PUEDE SEPARAR EN TOP-BOTTOM-RIGH-LEFT
+
+border-radios: para darle forma de circulo
+************************************************************************************************
+Padding es el espacio interno, margin el externo de los componentes, para todos se pueden poner en la misma linea o por separado el bottom, top, right. left.
+************************************************************************************************
+LISTS
+list-style-type: ver opciones, para cambiar la numeracion. Con none se quita la viñeta
+list-style-position: para poscionar las viñetas en el espcacio.
+************************************************************************************************
+LINKS
+Link: this is the state where link is not visite
+Visited: when the link has been visited
+Hover: when the mouse is on it
+Active: when the mouse click on it
+Estos se ponen asi 
+	Elemento:opcion{cambios}
+************************************************************************************************
+BUTTONS
+It has the same properties as a all elements.
+outline: none, para cambiar el border del boton, y el efecto hover para cuando se le va a dar click kpero eso es para todos tambien.
+************************************************************************************************ICONOS
+Para poner iconos, podemos usar font-awesome, se importa, para botones se pone adentro del boton y si queremos poner texto podemos poner un span para que quede bien y dentro del span va el texto.
+La otra opcion es oner una imagen y modificar tamaño
+************************************************************************************************
+Display:
+Inline es todo en la misma linea
+Block es para separa por bloques, ejemplo linea por linea
+None quita la visibilidad del objeto y su espacio, el visibility hidden solo lo oculta pero no quita el espacio.
+inline-block permite poner propiedades de block si es un elemento inline y propiedades de inline si es un block
+************************************************************************************************
+POSITION HTML ELEMENTS
+STATIC is the default normal order
+RELATIVE It helps to order elements to their normal position, provides acces to left, top, right, bottom.
+ABSOLUTE it helps to position relative to the parent element. If the parent do not have a other position like relative or static it will posittio relative to the html document, with this we can use z-index property to but one element above other
+FIXED It helps to position relative to the html document, they are not affected by the scroll	
+STICKY is a combination of relative and fixed, it requiered a condition, top, botton, right, left and based on it toggles between relative and fixed
+************************************************************************************************
+OVERFLOWS
+Hidden -> deja del tamaño exacto los elementos y corta lo sobrante
+Scroll -> Pone un scroll en los elementos si se pasan del tamaño. El scroll esta aunque no lo necesite
+Auto -> Se pone scroll si lo necesito si no no
+************************************************************************************************
+FLOAT:
+Es para ajustar los elemenos, para que si uno esta a la par del otro, abarquen el mismo tamaño por ejemplo una imagen que es mayor al texto, al principo solo se vera la primer linea a la par de la imagen, con float y un lado LEFT, RIGHT esta se ajustara al tamaño de la imagen y  al lado indicado
+************************************************************************************************ 
+BOX MODEL
+all elements are like a box, they has margin, border and padding.
+Box-sizing:
+	Boder-box: es que para que si se le da cosas como padding o se agranda un elemento intero a otro elemento padre, el padre no pierda el tamaño original definido.
+	Content-box:It lets the item get bigger to get all the content.
+************************************************************************************************
+SHADOWS
+text-shadow: [size size [size]] color para darle shadow al texto, puede tener cantidad n de shadows.
+box-shadow: agrega una shadow a la caja de los elementos.
+************************************************************************************************
+TRANSFORM. 
+It help to move the elements to another position.
+translateX(size), translateY(size)
+transalate(size, size) o 
+x-asis-rotateX()
+rotateX(angle), rotateY() rotateZ(angle)
+el rotate Z es para girar el elemento
+scaleX(size) para cambiar el tamaño
+scaleY() o scale(size, size)
+swekX(angle) para estirar a un angulo un elemento
+************************************************************************************************
+TRANSITION
+transition-property: property;
+transition-duration: time;
+esto para afectar la duracion de algun efecto para que no sea inmediato.
+
+transition-timining-function: efect;
+esto es para modificar la duracion y efecto de la transicion
+
+transition: property, time, effect;
+************************************************************************************************
+ANIMATION PROPERTY
+Each animation needs to be defined with the @keyframes rule
+
+//esto va en otra dentro el codigo de otra propiedad
+animation-name: rulename;
+animation-duration: time;
+animation-iteration-count: infinite or repetitions;
+
+animation-direction: alternate or reverse;
+para dterminar el orden de las animaciones
+
+animation-timing-function: effect; (ease-in)
+animation-play-state: paused; // para pausar la animacion
+
+animation: rulename, duration, effect, iteration;
+
+@keyframes rulename{
+	0%[start]{
+	 	css code
+	}
+	100%[end]{
+		css code
+	}
+}
+************************************************************************************************
+GRID LAYOUT
+display:grid;
+grid-template-columns: auto auto auto auto;
+// el auto auto auto auto es para declara 4 columnas y que todas tengan el mismo espacio
+
+grid-gap: espacio; es para dejar espacio entre columnas
+row-gap: espacio; es para definir espacio entre filas
+
+grid-template-columns: espacio espacio espacio espacio; 
+//cada vez que se define un espacio es porque se espera una column en el grid, y cada celda es del tamaño especificado.
+
+justify-content: space-between para dejar espacio equitativo en medio de los elementos.
+
+/////////////////////////////////////////////////////////////////
+display:grid;
+grid-template-areas: 'names';
+'header header header header header header'
+'sidebar main main main main aside'
+'footer' 'footer' 'footer' 'footer' 'footer' 'footer'
+/*con esto se divide la pagina en 3 filas con el header y footer ocupando toda una fila y el sidebar, main y aside distribuido como esta arriba*/
+
+/*se le pone nombre a las clases para poder determinar las areas y en el html se les debo poner el mismo nombre al id*/
