@@ -1,0 +1,98 @@
+1.Create a container.
+Fixed Container: It does not scale to the full width of the browser window 
+Flued Container:It scales to the full width of the window.
+
+Column Sizes:
+lg for larger desktops
+md for laptos/desktops
+sm for small tablets
+xs for phones
+Usualmente las pantallas se dividen en 12 columnas, al especifcar la clase 
+.col-size-number, el número indica las columnas a expandirse para un espacio, y la suma de columnas para una fila tiene que sumar 12
+
+*three column layouts will work on tablets 
+************************************************************************************************.btn-group btn-group-justify
+lista de botones, con esto ese grupo de  bonotes seran responsive.
+************************************************************************************************
+COLLAPSE TEXT
+ver el archivo de collapse text, este sirve para ocultar el texto y mostrarlo con un boton. Tabmien el collapse panel que funciona igual pero para un panel.
+************************************************************************************************
+VER ARCHIVO DE DYNAMIC TABS AND PILLS para poder utilizar tabs y mostrar contenido diferente en cada tab.
+
+ademas ver el archivo de collapse menu.
+
+ver tambien el form control states
+
+ver archivo carrousel
+
+ver archivo modal para abrir como una alert y personalizarla
+
+ver archivo tool tip para mostar un texto encima de un link element. Igual el popover es igual pero es más grande y posee más informacion.
+************************************************************************************************************************************************
+JQUERY SINTAX
+$(selector).action()
+$(document).ready(function(){});
+
+.mouseenter
+.mouseleave
+.mousedown
+.mouseup
+.hide
+.show
+
+.toggle(time) -> esto es para que se pueda aparecer y desapareces el elemento seleccionado.
+
+.fadeIn(speed, [callback]) -> para aparecer
+.fadeOut(speed, [callback]) -> para desaparecer
+
+.fadeToggle(speed, [callback]) para aparecer o desaparecer los elementos
+
+.fadeTo(speed, opacity) para cambiar la opacidad de los elementos.
+
+.slideUp(speed) funciona que el down pero para arrible y hay que dejarlo visible
+
+slideToggle(speed) es para mostrar y ocualtar un slide
+
+.animate({params}, speed)  esto es para mover de un lugar a otro ejemplo 
+{left: '800px', aqui pueden ir varios parametros, por lo general css atributes}
+tambien se puede poner una cola de animaciones que se ejecutan una a una
+
+.stop() para detener la animacion
+siempre se debe seleccionar el elemento que tiene la animacion para ver si se le puede aplicar.
+
+callback function  == .function(datos, funtion(){})
+
+.css("propiedad", "valor")
+
+
+VER archivo del accordian
+
+
+.text() para mostrar un texto tal y como es
+.html() para mostrar un texto cmo elementos html si tienen esa estructura
+
+.val() para obneter el valor de un input
+
+.attr("atributo") es para obtener el valor de un atributo en html
+
+.text("valor"), .val"valor"() y  .html("valor")
+permite settear el valor en vez de obtenerlo
+
+el  es attr("atributo", "valor nuevo")
+
+.append("codigohtml") para agregar valor al final del elemento seleccionado
+
+.prepend("code") igual que append pero lo pone antes.
+
+.after("code") para agregar elemento html antes y despues del elemento seleccionado
+.before("code")
+
+.remove([seleccionador], ...) para eleminar el elemnto seleccionado, se puede indicar el los seleccionadores para determinar que elementos  a eliminar.
+
+.empty() no elimina el elemento pero lo deja vacio
+
+.addClass("clases") para agregarle una clase a un elemento y poder modifcar su css
+
+.removeClass("clases") remueve clases
+
+.toggleClass("clases") para quitar y poner las clases

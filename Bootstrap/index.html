@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- fixed width container-fluid columns grid -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 bg1">TEST ONE</div>
+            <div class="col-lg-4 bg2">TEST TWO</div>
+            <div class="col-lg-4 bg1">TEST THREE</div>
+        </div>
+    </div>
+
+    <!-- bootstrap typography  -->
+    <div class="container">
+        <p>Heading one <small>secondary text</small> </p>
+        <p>Highlight <mark>text</mark> </p>
+        <p>Unerline <abbr title="jajaja">text </abbr></p>
+
+        <h2>Blockquotes</h2>
+        <blockquote>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sequi laudantium ex excepturi asperiores, eos voluptates? Nobis quo repellendus placeat.</p>
+            <footer>cheeee</footer>
+        </blockquote>
+
+         <!-- snipetts -->
+         <h2>Code Snippets</h2>
+         <p>HTML elements: <code>div</code>, <code>section</code>,and <code>span</code> </p>
+
+         <!-- keybord inputs  -->
+         <h2>KeyBord Inputs</h2>
+         <p>Use: <kbd>ctrl + v</kbd> </p>
+
+         <!-- pre allow us to enter text as in the html document  -->
+         <pre>
+             text t      t jajaja ja 
+             jajajja 
+         </pre>
+
+         <!-- contextual clasess  -->
+         <h2>Contextual</h2>
+         <p class="text-muted">Muted text</p>
+         <p class="text-primary">Primary text</p>
+         <p class="text-success">Success text</p>
+         <p class="text-info">Info text</p>
+         <p class="text-warning">Warning text</p>
+         <p class="text-danger">Danger text</p>
+
+         <h2>Contextual Backgroud</h2>
+         <p class="bg-primary">Primary text</p>
+         <p class="bg-success">Success text</p>
+         <p class="bg-info">Info text</p>
+         <p class="bg-warning">Warning text</p>
+         <p class="bg--danger">Danger bg</p>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="success">Nombre</th>
+                <th class="info">Apellido</th>
+                <th class="warning">Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Edad</td>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Edad</td>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Edad</td>
+            </tr>
+        </tbody>
+    </table>
+           
+    <!-- IMAGES  -->
+<div class="container">
+    <img src="./test.jfif" alt="" class="img-rounded">
+    <img src="./test.jfif" alt="" class="img-circle">
+    <img src="./test.jfif" alt="" class="img-thumbnail img-responsive">
+</div>
+
+<!-- JUMBOTRON  -->
+<div class="container">
+    <div class="jumbotron">
+        <h1>ORACLE</h1>
+        <p>una gran empresa</p>
+    </div>
+    <div class="page-header">
+        <h1>ORACLE</h1>
+        <p>una gran empresa</p>
+    </div>
+</div>
+
+<!-- WELLS  -->
+<div class="well wel-sm"><mark>small well</mark></div>
+<div class="well"><strong>Normal well</strong></div>
+<div class="well well-lg">Large well</div>
+
+<!-- ALERTS  -->
+<div class="alert alert-success">
+    <a href="#" class="close" data-dismiss="alert">&times;</a> <!--  con esta linea se puede cerrar la alerta -->
+    <strong>Carlos</strong>
+</div>
+ <!-- se puden usar warning y danger tambien  -->
+<div class="alert alert-info">
+    <strong>info</strong>
+</div>
+
+    <!-- ICONS  -->
+<div class="container">
+    <span class="glyhpicon glyphicon-envelope"></span>
+    <button class="btn btn-warning">
+        <span class="glyhpicon glyphicon-envelope"></span> Search
+    </button>
+
+    <!-- PROGRESS BAR  -->
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width:50%"></div>
+    </div>
+
+    <!-- PAGINATION  -->
+    <ul class="pagination">
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+
+    <!-- LIST GROUPS  -->
+    <ul class="list-group">
+        <li class="list-group-item"> <span class="badge">23</span> Item 1</li>
+        <li class="list-group-item">Item 2</li>
+        <li class="list-group-item">Item 3</li>
+        <a href="#" class="list-group-item active">Item 4</a>
+        <a href="#"class="list-group-item">Item 6</a>
+    </ul>
+</div>
+
+
+    
+</body>
+</html>
